@@ -7,10 +7,10 @@ Please manually download the datasets [Office-Home](https://drive.google.com/fil
 
 ### VisDA Training:
 ```python
-	 cd VisDA/
-	 sh run_source
-	 sh run_train
-	```
+ cd VisDA/
+ sh run_source
+ sh run_train
+```
   
 ### Citation
 
