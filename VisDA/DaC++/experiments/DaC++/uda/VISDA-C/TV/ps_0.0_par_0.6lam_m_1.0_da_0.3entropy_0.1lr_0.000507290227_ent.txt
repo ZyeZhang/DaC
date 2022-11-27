@@ -1,0 +1,75 @@
+==========================================
+==========       config      =============
+==========================================
+gpu_id:0,1,2,3
+s:0
+t:1
+output:./experiments/VISDA-C/target/mixmatch/
+output_tar:./experiments/VISDA-C/target/
+seed:2022
+max_epoch:15
+batch_size:24
+worker:4
+bottleneck_dim:256
+net:resnet101
+dset:VISDA-C
+lr:0.001
+alpha:0.5
+lambda_u:100
+T:0.5
+da:uda
+cls_par:0.3
+threshold:0
+ssl:0.6
+ps:0.0
+choice:ent
+savename:par_0.6lam_m_1.0_da_0.3entropy_0.1lr_0.000507290227
+layer:wn
+classifier:bn
+bottleneck:256
+gent:True
+model:target
+issave:False
+class_num:12
+t_dset_path:./data/VISDA-C/validation_list.txt
+test_dset_path:./data/VISDA-C/validation_list.txt
+name:TV
+output_dir:./experiments/VISDA-C/target/uda/VISDA-C/TV
+log:ps_0.0_par_0.6lam_m_1.0_da_0.3entropy_0.1lr_0.000507290227
+mm_dir:./experiments/VISDA-C/target/mixmatch/uda/VISDA-C/TV
+out_file:<_io.TextIOWrapper name='./experiments/VISDA-C/target/mixmatch/uda/VISDA-C/TV/ps_0.0_par_0.6lam_m_1.0_da_0.3entropy_0.1lr_0.000507290227_ent.txt' mode='w' encoding='UTF-8'>
+
+==========================================
+
+96.74 86.76 85.91 77.03 96.5 96.14 93.43 83.75 97.05 95.05 89.26 53.17
+Task: TV, Iter:0/0; Accuracy = 87.57%; Mean Ent = 0.3497
+Task: 0.72
+78.74 89.27 83.6 81.95 96.18 96.0 89.98 80.8 96.42 90.18 91.19 48.43
+Task: TV, Iter:2494/24945; Accuracy = 85.23%; Mean Ent = 0.6199
+63.47 81.87 83.18 79.26 94.76 91.23 88.16 82.45 96.86 84.66 84.3 45.48
+Task: TV, Iter:4988/24945; Accuracy = 81.31%; Mean Ent = 0.6287
+85.11 88.46 86.03 79.93 96.25 96.48 90.65 83.6 95.71 93.25 92.07 46.54
+Task: TV, Iter:7482/24945; Accuracy = 86.17%; Mean Ent = 0.4849
+67.09 85.12 84.61 81.97 96.06 88.63 90.58 84.0 96.72 88.47 89.07 46.76
+Task: TV, Iter:9976/24945; Accuracy = 83.26%; Mean Ent = 0.6025
+79.57 91.54 84.99 85.01 92.92 94.46 88.68 82.8 96.55 91.49 89.97 46.09
+Task: TV, Iter:12470/24945; Accuracy = 85.34%; Mean Ent = 0.5360
+96.49 81.84 90.04 84.78 96.78 97.11 95.15 84.45 96.64 93.82 88.43 47.98
+Task: TV, Iter:14964/24945; Accuracy = 87.79%; Mean Ent = 0.3819
+85.38 87.34 87.7 86.04 97.21 96.0 92.18 84.22 96.53 95.0 89.75 44.02
+Task: TV, Iter:17458/24945; Accuracy = 86.78%; Mean Ent = 0.5204
+97.17 87.08 91.09 85.74 96.89 97.54 93.41 85.42 96.7 93.07 88.48 43.49
+Task: TV, Iter:19952/24945; Accuracy = 88.01%; Mean Ent = 0.2885
+96.54 90.3 87.51 87.52 96.97 97.88 90.94 85.35 96.26 93.16 90.06 41.47
+Task: TV, Iter:22446/24945; Accuracy = 87.83%; Mean Ent = 0.5475
+97.04 90.59 85.46 85.41 97.46 97.88 92.79 86.12 96.81 93.86 91.38 44.52
+Task: TV, Iter:24940/24945; Accuracy = 88.28%; Mean Ent = 0.3301
+97.28 91.48 88.34 87.04 98.17 97.01 92.94 87.05 96.57 94.39 89.12 44.14
+Task: TV, Iter:24945/24945; Accuracy = 88.63%; Mean Ent = 0.4375
+
+==========================================
+
+Val Acc = 88.01
+Max Acc = 88.63
+Fin Acc = 88.63
+

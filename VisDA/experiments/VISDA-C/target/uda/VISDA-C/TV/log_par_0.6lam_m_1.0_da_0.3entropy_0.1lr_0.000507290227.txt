@@ -1,0 +1,292 @@
+==========================================
+gpu_id:0,1,2,3
+s:0
+t:1
+max_epoch:60
+k_nbor:5
+interval:60
+lr_change:30
+batch_size:64
+worker:4
+dset:VISDA-C
+lr:0.0005
+gamma:15
+net:resnet101
+seed:2020
+gent:True
+ent:True
+threshold:0
+p_threshold:0.97
+mmd_threshold:0
+cls_par:0.6
+ent_par:0.1
+lr_decay1:0.1
+lr_decay2:1.0
+lr_decay3:0.0
+lamda_m:1.0
+lamda_ad:0.3
+bottleneck:256
+epsilon:1e-05
+layer:wn
+classifier:bn
+distance:cosine
+output:./experiments/VISDA-C/target/
+output_src:./experiments/VISDA-C/source/
+da:uda
+issave:True
+temp:0.05
+momentum:0.2
+K:300
+T:07290227
+eval_aug:weak
+ad_method:ours
+class_num:12
+s_dset_path:./data/VISDA-C/train_list.txt
+t_dset_path:./data/VISDA-C/validation_list.txt
+test_dset_path:./data/VISDA-C/validation_list.txt
+output_dir_src:./experiments/VISDA-C/source/uda/VISDA-C/T
+output_dir:./experiments/VISDA-C/target/uda/VISDA-C/TV
+name:TV
+savename:par_0.6lam_m_1.0_da_0.3entropy_0.1lr_0.000507290227
+out_file:<_io.TextIOWrapper name='./experiments/VISDA-C/target/uda/VISDA-C/TV/log_par_0.6lam_m_1.0_da_0.3entropy_0.1lr_0.000507290227.txt' mode='w' encoding='UTF-8'>
+
+By SHOT psuedo labeling, Accuracy = 52.59% -> 56.49%
+Task: TV, Iter:865/51900; Accuracy = 71.25%. 
+ The memory bank labeled numbers:3600.0 with acc 94.25%
+87.49 52.69 85.91 61.06 89.0 72.96 91.27 71.95 83.71 48.22 81.26 29.49
+By SHOT psuedo labeling, Accuracy = 70.85% -> 74.98%
+Task: TV, Iter:1730/51900; Accuracy = 80.03%. 
+ The memory bank labeled numbers:11967.0 with acc 95.77%
+95.69 76.69 82.75 61.37 93.56 89.25 89.1 79.2 90.42 75.05 85.48 41.82
+By SHOT psuedo labeling, Accuracy = 77.20% -> 77.35%
+Task: TV, Iter:2595/51900; Accuracy = 81.83%. 
+ The memory bank labeled numbers:20649.0 with acc 95.49%
+96.11 78.79 86.52 63.52 95.14 93.59 88.34 82.98 88.7 80.53 81.07 46.63
+By SHOT psuedo labeling, Accuracy = 78.80% -> 78.71%
+Task: TV, Iter:3460/51900; Accuracy = 83.27%. 
+ The memory bank labeled numbers:25932.0 with acc 94.88%
+95.45 84.95 85.22 65.1 94.86 94.94 89.29 81.03 88.35 88.43 83.62 48.0
+By SHOT psuedo labeling, Accuracy = 79.94% -> 79.68%
+Task: TV, Iter:4325/51900; Accuracy = 83.52%. 
+ The memory bank labeled numbers:29673.0 with acc 94.35%
+96.11 84.03 86.89 63.69 95.35 95.33 89.46 82.68 89.4 88.03 82.37 48.9
+By SHOT psuedo labeling, Accuracy = 80.06% -> 79.88%
+Task: TV, Iter:5190/51900; Accuracy = 83.84%. 
+ The memory bank labeled numbers:32351.0 with acc 94.03%
+95.53 77.27 84.5 65.37 96.23 96.39 92.44 81.58 90.75 88.38 88.2 49.46
+By SHOT psuedo labeling, Accuracy = 80.68% -> 80.56%
+Task: TV, Iter:6055/51900; Accuracy = 84.62%. 
+ The memory bank labeled numbers:34445.0 with acc 93.68%
+96.43 82.99 86.8 67.48 96.12 96.24 91.65 81.88 90.35 91.36 85.06 49.06
+By SHOT psuedo labeling, Accuracy = 81.43% -> 81.25%
+Task: TV, Iter:6920/51900; Accuracy = 85.20%. 
+ The memory bank labeled numbers:36217.0 with acc 93.36%
+97.39 85.18 87.38 70.46 96.63 94.07 89.84 82.22 92.5 92.85 87.84 45.96
+By SHOT psuedo labeling, Accuracy = 82.18% -> 81.77%
+Task: TV, Iter:7785/51900; Accuracy = 85.51%. 
+ The memory bank labeled numbers:37615.0 with acc 93.11%
+96.96 84.06 84.86 70.2 96.42 95.9 90.42 82.58 94.33 93.69 88.13 48.58
+By SHOT psuedo labeling, Accuracy = 82.42% -> 82.04%
+Task: TV, Iter:8650/51900; Accuracy = 85.86%. 
+ The memory bank labeled numbers:38868.0 with acc 92.91%
+96.24 85.76 82.73 70.25 95.12 95.86 92.51 81.8 95.1 94.52 89.07 51.32
+By SHOT psuedo labeling, Accuracy = 82.80% -> 82.44%
+Task: TV, Iter:9515/51900; Accuracy = 86.00%. 
+ The memory bank labeled numbers:39876.0 with acc 92.73%
+96.87 86.19 83.39 71.42 96.63 94.94 90.61 82.48 95.32 93.47 91.05 49.69
+By SHOT psuedo labeling, Accuracy = 83.05% -> 82.63%
+Task: TV, Iter:10380/51900; Accuracy = 86.14%. 
+ The memory bank labeled numbers:40752.0 with acc 92.55%
+95.42 85.99 86.78 71.22 95.93 95.95 91.37 81.98 96.44 92.68 89.4 50.56
+By SHOT psuedo labeling, Accuracy = 83.24% -> 82.89%
+Task: TV, Iter:11245/51900; Accuracy = 86.42%. 
+ The memory bank labeled numbers:41517.0 with acc 92.34%
+96.93 84.12 86.18 75.37 95.61 95.9 92.77 81.85 96.2 93.69 88.36 50.13
+By SHOT psuedo labeling, Accuracy = 83.96% -> 83.48%
+Task: TV, Iter:12110/51900; Accuracy = 86.01%. 
+ The memory bank labeled numbers:42194.0 with acc 92.19%
+95.89 87.05 84.05 74.19 96.48 97.59 90.42 80.15 94.31 93.51 90.06 48.45
+By SHOT psuedo labeling, Accuracy = 83.24% -> 82.94%
+Task: TV, Iter:12975/51900; Accuracy = 86.17%. 
+ The memory bank labeled numbers:42779.0 with acc 92.08%
+95.26 83.77 85.74 74.39 96.08 96.87 92.84 82.65 95.71 92.85 90.3 47.55
+By SHOT psuedo labeling, Accuracy = 83.56% -> 83.25%
+Task: TV, Iter:13840/51900; Accuracy = 86.22%. 
+ The memory bank labeled numbers:43301.0 with acc 91.92%
+96.98 81.67 85.27 71.5 96.76 95.86 92.46 82.52 95.08 93.82 91.71 50.99
+By SHOT psuedo labeling, Accuracy = 83.37% -> 82.93%
+Task: TV, Iter:14705/51900; Accuracy = 86.59%. 
+ The memory bank labeled numbers:43763.0 with acc 91.76%
+96.13 87.88 86.16 72.4 95.08 96.63 90.15 82.95 95.69 94.13 91.36 50.47
+By SHOT psuedo labeling, Accuracy = 83.61% -> 83.29%
+Task: TV, Iter:15570/51900; Accuracy = 86.67%. 
+ The memory bank labeled numbers:44163.0 with acc 91.64%
+95.8 88.63 87.33 75.51 95.78 97.45 91.58 82.7 93.27 93.64 87.3 51.05
+By SHOT psuedo labeling, Accuracy = 84.07% -> 83.80%
+Task: TV, Iter:16435/51900; Accuracy = 86.64%. 
+ The memory bank labeled numbers:44542.0 with acc 91.53%
+96.6 87.42 84.33 72.52 96.87 97.01 91.84 82.6 95.58 93.82 91.5 49.6
+By SHOT psuedo labeling, Accuracy = 83.70% -> 83.35%
+Task: TV, Iter:17300/51900; Accuracy = 86.66%. 
+ The memory bank labeled numbers:44872.0 with acc 91.44%
+97.59 87.77 84.01 72.14 96.4 96.92 92.1 82.22 94.59 93.73 89.61 52.81
+By SHOT psuedo labeling, Accuracy = 83.73% -> 83.47%
+Task: TV, Iter:18165/51900; Accuracy = 86.99%. 
+ The memory bank labeled numbers:45193.0 with acc 91.34%
+95.5 87.28 83.99 77.08 96.67 94.6 93.7 81.45 96.0 96.14 89.21 52.22
+By SHOT psuedo labeling, Accuracy = 84.66% -> 84.38%
+Task: TV, Iter:19030/51900; Accuracy = 86.75%. 
+ The memory bank labeled numbers:45481.0 with acc 91.28%
+95.86 88.06 86.06 73.35 95.82 96.82 90.75 82.9 96.2 94.48 90.6 50.14
+By SHOT psuedo labeling, Accuracy = 83.86% -> 83.56%
+Task: TV, Iter:19895/51900; Accuracy = 86.77%. 
+ The memory bank labeled numbers:45737.0 with acc 91.21%
+96.05 85.06 84.75 75.16 96.67 96.92 93.56 82.62 96.31 94.08 90.75 49.33
+By SHOT psuedo labeling, Accuracy = 84.19% -> 83.94%
+Task: TV, Iter:20760/51900; Accuracy = 86.97%. 
+ The memory bank labeled numbers:45975.0 with acc 91.15%
+96.98 86.33 85.31 75.5 96.99 97.06 92.15 84.08 95.74 92.85 89.42 51.19
+By SHOT psuedo labeling, Accuracy = 84.42% -> 84.14%
+Task: TV, Iter:21625/51900; Accuracy = 87.25%. 
+ The memory bank labeled numbers:46227.0 with acc 91.05%
+96.57 88.66 84.71 78.1 96.06 97.06 91.99 81.68 95.89 93.99 88.67 53.66
+By SHOT psuedo labeling, Accuracy = 84.96% -> 84.64%
+Task: TV, Iter:22490/51900; Accuracy = 87.02%. 
+ The memory bank labeled numbers:46447.0 with acc 90.98%
+96.0 89.93 85.61 75.77 96.87 97.16 90.6 82.58 95.03 94.96 88.88 50.85
+By SHOT psuedo labeling, Accuracy = 84.33% -> 84.16%
+Task: TV, Iter:23355/51900; Accuracy = 86.96%. 
+ The memory bank labeled numbers:46657.0 with acc 90.94%
+96.38 88.12 84.54 74.07 97.19 97.16 92.93 80.62 95.12 94.48 90.53 52.43
+By SHOT psuedo labeling, Accuracy = 84.24% -> 84.03%
+Task: TV, Iter:24220/51900; Accuracy = 87.15%. 
+ The memory bank labeled numbers:46806.0 with acc 90.88%
+96.54 90.88 84.97 74.63 96.72 96.87 91.77 81.27 96.15 94.3 90.96 50.79
+By SHOT psuedo labeling, Accuracy = 84.38% -> 84.10%
+Task: TV, Iter:25085/51900; Accuracy = 87.11%. 
+ The memory bank labeled numbers:46981.0 with acc 90.85%
+96.54 88.69 86.03 75.48 95.76 96.82 92.46 81.75 96.72 94.52 89.87 50.67
+By SHOT psuedo labeling, Accuracy = 84.48% -> 84.21%
+Task: TV, Iter:25950/51900; Accuracy = 87.16%. 
+ The memory bank labeled numbers:47136.0 with acc 90.78%
+95.78 87.94 86.29 75.28 96.8 96.67 91.03 83.2 96.39 95.09 89.87 51.57
+By SHOT psuedo labeling, Accuracy = 84.49% -> 84.29%
+Task: TV, Iter:26815/51900; Accuracy = 86.80%. 
+ The memory bank labeled numbers:47268.0 with acc 90.73%
+97.28 85.12 87.95 77.39 97.21 97.54 92.37 81.85 95.67 93.69 88.29 47.21
+By SHOT psuedo labeling, Accuracy = 84.38% -> 84.26%
+Task: TV, Iter:27680/51900; Accuracy = 87.29%. 
+ The memory bank labeled numbers:47411.0 with acc 90.68%
+95.64 86.42 85.99 75.16 96.99 96.87 93.81 82.78 95.27 94.78 89.97 53.86
+By SHOT psuedo labeling, Accuracy = 84.75% -> 84.47%
+Task: TV, Iter:28545/51900; Accuracy = 87.16%. 
+ The memory bank labeled numbers:47545.0 with acc 90.62%
+96.32 86.88 85.8 76.08 96.65 96.24 93.06 82.75 96.5 95.05 89.54 50.99
+By SHOT psuedo labeling, Accuracy = 84.64% -> 84.44%
+Task: TV, Iter:29410/51900; Accuracy = 87.05%. 
+ The memory bank labeled numbers:47691.0 with acc 90.58%
+96.02 86.45 84.35 75.2 96.01 97.01 91.79 85.08 96.02 94.48 89.97 52.2
+By SHOT psuedo labeling, Accuracy = 84.41% -> 84.20%
+Task: TV, Iter:30275/51900; Accuracy = 87.27%. 
+ The memory bank labeled numbers:47807.0 with acc 90.51%
+96.35 88.98 87.97 75.82 96.38 96.29 91.68 84.98 95.41 95.79 87.39 50.18
+By SHOT psuedo labeling, Accuracy = 84.60% -> 84.39%
+Task: TV, Iter:31140/51900; Accuracy = 87.20%. 
+ The memory bank labeled numbers:47931.0 with acc 90.43%
+96.82 87.57 85.29 73.2 96.97 96.63 91.65 83.22 96.7 95.0 90.27 53.1
+By SHOT psuedo labeling, Accuracy = 84.35% -> 84.16%
+Task: TV, Iter:32005/51900; Accuracy = 87.36%. 
+ The memory bank labeled numbers:48026.0 with acc 90.39%
+96.27 88.37 86.82 77.8 96.14 95.04 91.75 85.1 96.68 94.48 87.42 52.4
+By SHOT psuedo labeling, Accuracy = 85.06% -> 84.77%
+Task: TV, Iter:32870/51900; Accuracy = 87.24%. 
+ The memory bank labeled numbers:48106.0 with acc 90.35%
+96.74 88.14 86.76 76.99 96.31 96.53 92.25 82.8 95.76 95.13 89.97 49.46
+By SHOT psuedo labeling, Accuracy = 84.73% -> 84.49%
+Task: TV, Iter:33735/51900; Accuracy = 87.19%. 
+ The memory bank labeled numbers:48187.0 with acc 90.31%
+96.52 87.94 86.14 74.36 97.42 96.19 92.63 80.32 96.48 95.97 89.71 52.56
+By SHOT psuedo labeling, Accuracy = 84.48% -> 84.26%
+Task: TV, Iter:34600/51900; Accuracy = 87.36%. 
+ The memory bank labeled numbers:48296.0 with acc 90.29%
+97.17 89.5 85.48 74.29 97.48 96.39 91.61 83.62 96.17 94.34 90.63 51.6
+By SHOT psuedo labeling, Accuracy = 84.58% -> 84.37%
+Task: TV, Iter:35465/51900; Accuracy = 87.00%. 
+ The memory bank labeled numbers:48378.0 with acc 90.27%
+96.43 86.68 87.19 75.18 96.95 97.3 93.7 79.2 96.64 94.7 87.96 52.13
+By SHOT psuedo labeling, Accuracy = 84.45% -> 84.28%
+Task: TV, Iter:36330/51900; Accuracy = 87.32%. 
+ The memory bank labeled numbers:48464.0 with acc 90.22%
+96.6 88.0 86.87 75.69 96.78 96.39 92.65 81.65 96.9 95.88 88.55 51.95
+By SHOT psuedo labeling, Accuracy = 84.73% -> 84.49%
+Task: TV, Iter:37195/51900; Accuracy = 87.41%. 
+ The memory bank labeled numbers:48546.0 with acc 90.20%
+95.91 87.65 84.78 78.36 95.95 96.0 91.84 83.35 96.75 95.7 90.32 52.33
+By SHOT psuedo labeling, Accuracy = 85.09% -> 84.86%
+Task: TV, Iter:38060/51900; Accuracy = 86.94%. 
+ The memory bank labeled numbers:48618.0 with acc 90.17%
+96.57 83.57 86.63 72.7 96.23 96.92 94.38 82.58 95.96 94.74 89.68 53.35
+By SHOT psuedo labeling, Accuracy = 84.19% -> 84.13%
+Task: TV, Iter:38925/51900; Accuracy = 87.28%. 
+ The memory bank labeled numbers:48681.0 with acc 90.15%
+97.26 85.7 85.31 73.8 97.12 96.82 93.37 82.18 95.3 95.7 89.68 55.17
+By SHOT psuedo labeling, Accuracy = 84.57% -> 84.38%
+Task: TV, Iter:39790/51900; Accuracy = 87.06%. 
+ The memory bank labeled numbers:48752.0 with acc 90.13%
+96.71 87.11 86.63 75.35 97.06 97.06 93.41 80.97 96.37 94.74 90.23 49.08
+By SHOT psuedo labeling, Accuracy = 84.43% -> 84.29%
+Task: TV, Iter:40655/51900; Accuracy = 87.33%. 
+ The memory bank labeled numbers:48828.0 with acc 90.09%
+97.04 88.49 86.33 74.71 97.34 96.92 93.13 81.82 95.47 95.53 89.61 51.62
+By SHOT psuedo labeling, Accuracy = 84.61% -> 84.40%
+Task: TV, Iter:41520/51900; Accuracy = 86.87%. 
+ The memory bank labeled numbers:48871.0 with acc 90.08%
+97.37 86.13 87.12 72.51 96.91 97.64 93.15 82.95 94.79 93.95 90.16 49.8
+By SHOT psuedo labeling, Accuracy = 83.95% -> 83.89%
+Task: TV, Iter:42385/51900; Accuracy = 87.20%. 
+ The memory bank labeled numbers:48928.0 with acc 90.06%
+96.74 86.96 84.95 74.42 96.55 97.01 93.93 82.98 95.93 93.95 90.96 52.0
+By SHOT psuedo labeling, Accuracy = 84.54% -> 84.32%
+Task: TV, Iter:43250/51900; Accuracy = 87.39%. 
+ The memory bank labeled numbers:48996.0 with acc 90.04%
+95.36 87.94 84.82 76.9 97.25 97.01 92.72 82.3 95.78 95.0 91.08 52.47
+By SHOT psuedo labeling, Accuracy = 84.93% -> 84.65%
+Task: TV, Iter:44115/51900; Accuracy = 87.20%. 
+ The memory bank labeled numbers:49056.0 with acc 90.02%
+96.43 88.63 86.1 74.13 97.06 97.3 92.93 82.22 95.87 94.13 90.6 50.99
+By SHOT psuedo labeling, Accuracy = 84.43% -> 84.21%
+Task: TV, Iter:44980/51900; Accuracy = 87.17%. 
+ The memory bank labeled numbers:49122.0 with acc 89.98%
+96.49 86.91 85.93 74.75 97.1 96.43 93.27 81.8 96.64 94.7 92.19 49.87
+By SHOT psuedo labeling, Accuracy = 84.50% -> 84.41%
+Task: TV, Iter:45845/51900; Accuracy = 87.47%. 
+ The memory bank labeled numbers:49185.0 with acc 89.95%
+96.71 87.71 86.84 75.38 96.72 96.82 93.06 83.43 96.09 94.65 87.82 54.4
+By SHOT psuedo labeling, Accuracy = 84.91% -> 84.64%
+Task: TV, Iter:46710/51900; Accuracy = 87.28%. 
+ The memory bank labeled numbers:49242.0 with acc 89.93%
+97.15 85.87 87.48 77.94 96.53 97.01 93.13 82.65 95.54 95.27 87.7 51.05
+By SHOT psuedo labeling, Accuracy = 84.94% -> 84.68%
+Task: TV, Iter:47575/51900; Accuracy = 87.23%. 
+ The memory bank labeled numbers:49282.0 with acc 89.91%
+97.2 88.43 87.72 78.35 96.48 97.16 92.31 82.5 96.09 93.25 89.87 47.39
+By SHOT psuedo labeling, Accuracy = 84.87% -> 84.69%
+Task: TV, Iter:48440/51900; Accuracy = 87.19%. 
+ The memory bank labeled numbers:49346.0 with acc 89.89%
+96.54 87.57 87.01 75.67 96.97 97.35 92.12 82.12 96.11 93.82 89.19 51.8
+By SHOT psuedo labeling, Accuracy = 84.62% -> 84.47%
+Task: TV, Iter:49305/51900; Accuracy = 87.47%. 
+ The memory bank labeled numbers:49397.0 with acc 89.85%
+96.68 89.61 83.52 77.29 97.02 96.67 92.43 83.38 95.82 94.91 91.19 51.1
+By SHOT psuedo labeling, Accuracy = 84.98% -> 84.73%
+Task: TV, Iter:50170/51900; Accuracy = 87.55%. 
+ The memory bank labeled numbers:49455.0 with acc 89.85%
+97.5 86.88 85.42 79.13 96.61 95.76 93.34 83.08 96.39 95.48 88.36 52.61
+By SHOT psuedo labeling, Accuracy = 85.37% -> 85.05%
+Task: TV, Iter:51035/51900; Accuracy = 87.09%. 
+ The memory bank labeled numbers:49491.0 with acc 89.82%
+96.38 87.45 85.76 71.94 96.89 97.11 93.18 81.68 96.35 95.18 90.96 52.18
+By SHOT psuedo labeling, Accuracy = 84.11% -> 84.02%
+Task: TV, Iter:51900/51900; Accuracy = 87.57%. 
+ The memory bank labeled numbers:49548.0 with acc 89.81%
+96.74 86.76 85.91 77.03 96.5 96.14 93.43 83.75 97.05 95.05 89.26 53.17
